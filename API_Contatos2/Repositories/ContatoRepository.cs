@@ -1,4 +1,4 @@
-﻿using API_Contatos2.Models;
+using API_Contatos2.Models;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -7,33 +7,28 @@ namespace API_Contatos2.Repositories
     public class ContatoRepository  : IRepository<Contato>
     {
         private readonly Contexto _contexto;
-        private readonly IList<Contato> _lista;
 
         public ContatoRepository(Contexto contexto)
         {
             _contexto = contexto;
-            _lista = Carga();
         }
 
-        public IList<Contato> GetAll()
+        public IList<Contato> GetAll(int page, int size)
         {
-            IList<Contato> resultado = _lista;
-            //if (pageAndSize == null) return resultado.Take(10).ToList();
-            //var page = pageAndSize.Page;
-            //var size = pageAndSize.Size == 0 ? 10 : pageAndSize.Size;
-            //return resultado.Skip((page - 1) * size).Take(pageAndSize.Size).ToList();
-            return resultado;
+            IList<Contato> resultado = Carga();
+            if (page < 0 || size < 1) return resultado.Take(10).ToList();
+            return resultado.Skip((page) * size).Take(size).ToList();
         }
 
         public Contato Get(int id)
         {
-            Contato resultado = _lista.FirstOrDefault(x => x.Id == id);
+            Contato resultado = Carga().FirstOrDefault(x => x.Id == id);
             return resultado;
         }
 
         public void Add(Contato contato)
         {
-            _lista.Add(contato);
+            _contexto.Contatos.Add(contato);
         }
 
         public void Update(Contato contato, int id)
