@@ -5,8 +5,7 @@ namespace API_Contatos2.Repositories
 {
     public interface IRepository<T> where T : class
     {
-        //IList<T> GetAll(PageAndSizeInfo pageAndSize);
-        IList<T> GetAll();
+        IList<T> GetAll(int page, int size);
         T Get(int id);
         void Add(T objeto);
         void Update(T objeto, int id);
