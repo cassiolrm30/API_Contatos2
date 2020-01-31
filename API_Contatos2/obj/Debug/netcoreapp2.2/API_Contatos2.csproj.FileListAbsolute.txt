@@ -1,0 +1,13 @@
+C:\Users\cassio.lacerda\source\repos\API_Contatos2\API_Contatos2\bin\Debug\netcoreapp2.2\API_Contatos2.deps.json
+C:\Users\cassio.lacerda\source\repos\API_Contatos2\API_Contatos2\bin\Debug\netcoreapp2.2\API_Contatos2.runtimeconfig.json
+C:\Users\cassio.lacerda\source\repos\API_Contatos2\API_Contatos2\bin\Debug\netcoreapp2.2\API_Contatos2.runtimeconfig.dev.json
+C:\Users\cassio.lacerda\source\repos\API_Contatos2\API_Contatos2\bin\Debug\netcoreapp2.2\API_Contatos2.dll
+C:\Users\cassio.lacerda\source\repos\API_Contatos2\API_Contatos2\bin\Debug\netcoreapp2.2\API_Contatos2.pdb
+C:\Users\cassio.lacerda\source\repos\API_Contatos2\API_Contatos2\obj\Debug\netcoreapp2.2\API_Contatos2.csproj.CoreCompileInputs.cache
+C:\Users\cassio.lacerda\source\repos\API_Contatos2\API_Contatos2\obj\Debug\netcoreapp2.2\API_Contatos2.RazorAssemblyInfo.cache
+C:\Users\cassio.lacerda\source\repos\API_Contatos2\API_Contatos2\obj\Debug\netcoreapp2.2\API_Contatos2.RazorAssemblyInfo.cs
+C:\Users\cassio.lacerda\source\repos\API_Contatos2\API_Contatos2\obj\Debug\netcoreapp2.2\API_Contatos2.AssemblyInfoInputs.cache
+C:\Users\cassio.lacerda\source\repos\API_Contatos2\API_Contatos2\obj\Debug\netcoreapp2.2\API_Contatos2.AssemblyInfo.cs
+C:\Users\cassio.lacerda\source\repos\API_Contatos2\API_Contatos2\obj\Debug\netcoreapp2.2\API_Contatos2.RazorTargetAssemblyInfo.cache
+C:\Users\cassio.lacerda\source\repos\API_Contatos2\API_Contatos2\obj\Debug\netcoreapp2.2\API_Contatos2.dll
+C:\Users\cassio.lacerda\source\repos\API_Contatos2\API_Contatos2\obj\Debug\netcoreapp2.2\API_Contatos2.pdb

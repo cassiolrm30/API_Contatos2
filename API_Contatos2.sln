@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_Contatos2", "API_Contatos2\API_Contatos2.csproj", "{DBF33F2B-6BB3-4025-B196-3E063B211C32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBF33F2B-6BB3-4025-B196-3E063B211C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBF33F2B-6BB3-4025-B196-3E063B211C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBF33F2B-6BB3-4025-B196-3E063B211C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBF33F2B-6BB3-4025-B196-3E063B211C32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19244EF3-47CF-4D93-8420-0DE3FF6BB81E}
+	EndGlobalSection
+EndGlobal
