@@ -7,15 +7,17 @@ namespace API_Contatos2.Repositories
     public class ContatoRepository  : IRepository<Contato>
     {
         private readonly Contexto _contexto;
+        private readonly IList<Contato> _lista;
 
         public ContatoRepository(Contexto contexto)
         {
             _contexto = contexto;
+            _lista = Carga();
         }
 
         public IList<Contato> GetAll()
         {
-            IList<Contato> resultado = Carga();
+            IList<Contato> resultado = _lista;
             //if (pageAndSize == null) return resultado.Take(10).ToList();
             //var page = pageAndSize.Page;
             //var size = pageAndSize.Size == 0 ? 10 : pageAndSize.Size;
@@ -25,13 +27,13 @@ namespace API_Contatos2.Repositories
 
         public Contato Get(int id)
         {
-            Contato resultado = Carga().FirstOrDefault(x => x.Id == id);
+            Contato resultado = _lista.FirstOrDefault(x => x.Id == id);
             return resultado;
         }
 
         public void Add(Contato contato)
         {
-            _contexto.Contatos.Add(contato);
+            _lista.Add(contato);
         }
 
         public void Update(Contato contato, int id)
