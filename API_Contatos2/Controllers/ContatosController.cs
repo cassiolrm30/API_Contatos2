@@ -1,8 +1,7 @@
-﻿using API_Contatos2.Models;
+using API_Contatos2.Models;
 using API_Contatos2.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace API_Contatos2.Controllers
 {
@@ -19,9 +18,9 @@ namespace API_Contatos2.Controllers
  
         // GET api/values
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult Get(int page, int size)
         {
-            var resultado = _repositorio.GetAll().ToList();
+            var resultado = _repositorio.GetAll(page, size).ToList();
             if (!CheckAccessCondition())
                 return Unauthorized();          // status 401 - ação requer autenticação
             if (resultado == null)
@@ -43,7 +42,7 @@ namespace API_Contatos2.Controllers
 
         // POST api/values
         [HttpPost]
-        public IActionResult Post([FromForm] Contato contato)
+        public IActionResult Post([FromBody] Contato contato)
         {
             if (!CheckAccessCondition())
                 return Unauthorized();                      // status 401 - ação requer autenticação
@@ -55,7 +54,7 @@ namespace API_Contatos2.Controllers
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromForm] Contato contato)
+        public IActionResult Put(int id, [FromBody] Contato contato)
         {
             if (!CheckAccessCondition())
                 return Unauthorized();                      // status 401 - ação requer autenticação
